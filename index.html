@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍴 Our Restaurant Menu</h1>
+
+    <div class="btn-group">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('starter')">Starters</button>
+      <button onclick="filterMenu('main')">Main Course</button>
+      <button onclick="filterMenu('dessert')">Desserts</button>
+      <button onclick="filterMenu('drink')">Drinks</button>
+    </div>
+
+    <div class="menu" id="menuList">
+      <!-- Menu Items -->
+      <div class="menu-item starter">
+        <img src="images/download.jpeg" alt="Soup">
+        <h3>Tomato Soup</h3>
+        <p>Fresh tomato soup with basil.</p>
+        <p class="price">₹120<br>
+            Discount 10%
+        </p>
+      </div>
+
+      <div class="menu-item main">
+        <img src="images/cheesy-crust-pizza-8.jpg" alt="Pizza">
+        <h3>Cheese Pizza</h3>
+        <p>Delicious cheesy delight.</p>
+        <p class="price">₹250
+            <br> Discount 20%
+        </p>
+      </div>
+
+      <div class="menu-item dessert">
+        <img src="images/Vanilla icecream.jpeg" alt="Ice Cream">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Classic vanilla scoop.</p>
+        <p class="price">₹90</p>
+      </div>
+
+      <div class="menu-item drink">
+        <img src="images/Cappuccino.jpg" alt="Coffee">
+        <h3>Cappuccino</h3>
+        <p>Rich and creamy coffee.</p>
+        <p class="price">₹110</p>
+      </div>
+
+      <div class="menu-item main">
+        <img src="images/Ultimate-Veggie-Burgers.jpg" alt="Burger">
+        <h3>Veggie Burger</h3>
+        <p>Healthy and tasty.</p>
+        <p class="price">₹180
+            <br>
+            Discount 20%
+        </p>
+      </div>
+
+      <div class="menu-item starter">
+        <img src="images/Mixed-Green-Salad-Recipe.jpg" alt="Salad">
+        <h3>Green Salad</h3>
+        <p>Fresh greens with dressing.</p>
+        <p class="price">₹100</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
